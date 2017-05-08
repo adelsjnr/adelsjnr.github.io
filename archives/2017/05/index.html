@@ -15,7 +15,7 @@
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="Tech notes">
-<meta property="og:url" content="http://yoursite.com/archives/2017/05/index.html">
+<meta property="og:url" content="https://adelsjnr.github.io/archives/2017/05/index.html">
 <meta property="og:site_name" content="Tech notes">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tech notes">
@@ -233,50 +233,8 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/05/04/Hello-world/">
-                            Hello world
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-05-04T12:11:34-03:00">
-	
-		    May 04, 2017
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>Algo a ser escrito aqui</p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/05/04/Hello-world/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
                         <a class="link-unstyled" href="/2017/05/04/Blogging-in-node-js/">
-                            Blogging in node.js
+                            Blogging in node.js com Hexo framework
                         </a>
                     
                 </h1>
@@ -292,16 +250,29 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <p>Recentemente comecei a aprender muita coisa nova em tech. Daí veio a vontade de ompartilhar na forma de um blog. Como eu queria unir o útil ao agradável, resolvi estudar node.js e criar um blog usando o que estava aprendendo.<br>Foi aí que cheguei no <a href="http://hexi.io" target="_blank" rel="external">Hexo</a>.</p>
-<p>Não vou me estender muito neste post, mas realmente é muito fácil subir um blog com o Hexo, quer ver?</p>
-<p>Com o <em>node</em> já instalado, tudo o que precisa fazer para ter o seu blog com o Hexo é:</p>
+                    <p>Ultimamente comecei a aprender <strong>muita coisa nova</strong> em tecnologia. Muita coisa mesmo.<br>Daí veio a vontade de compartilhar na forma de um <strong>blog</strong>.<br>Unindo o útil ao agradável (aprender e compartilhar), resolvi estudar um pouco de <em>node.js</em> e criar um <em>blog</em> usando um framework escrito em node.<br>Foi aí que cheguei no <a href="http://hexo.io" target="_blank" rel="external">Hexo</a>.</p>
+<p>Não vou me estender muito neste post, mas pra quem quer subir um <em>blog pessoal</em> rápido e fácil o <strong>Hexo</strong> atende e muito bem.</p>
+<p>Olha como é fácil:</p>
+<p>Com o <em>node</em> já instalado, tudo o que precisa fazer para ter o seu blog é:</p>
 <h4 id="Instalar-o-Hexo-global"><a href="#Instalar-o-Hexo-global" class="headerlink" title="Instalar o Hexo global"></a>Instalar o Hexo global</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g</div></pre></td></tr></table></figure>
 <h4 id="Rodar-o-init-do-Hexo"><a href="#Rodar-o-init-do-Hexo" class="headerlink" title="Rodar o init do Hexo"></a>Rodar o init do Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure>
-<h4 id="Criar-um-post-e-edita-lo"><a href="#Criar-um-post-e-edita-lo" class="headerlink" title="Criar um post e editá-lo"></a>Criar um post e editá-lo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My very first port ever"</span></div></pre></td></tr></table></figure>
+<p>O init cria toda a estrutura inicial do seu blog.</p>
+<h4 id="Configure-seu-blog"><a href="#Configure-seu-blog" class="headerlink" title="Configure seu blog"></a>Configure seu blog</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim _config.yml</div></pre></td></tr></table></figure>
+<p>Pra começar, edite as entradas <code>title:</code>, <code>subtitle:</code>, <code>author:</code> do teu blog  </p>
+<h4 id="Criar-um-post-e-edita-lo"><a href="#Criar-um-post-e-edita-lo" class="headerlink" title="Criar um post e editá-lo"></a>Criar um post e editá-lo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My very first post ever, aka Hello World"</span></div></pre></td></tr></table></figure>
+<p>Este comando criou a estrutura para o seu post.<br>O <code>hexo new</code> pode criar um novo <code>post</code>, <code>page</code> ou <code>draft</code>. Por padrão ele cria um <code>post</code>.<br>Para criar uma nova página, por exemplo, o comando ficaria assim:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"About"</span></div></pre></td></tr></table></figure></p>
+<h4 id="Editar-o-md-file-do-post"><a href="#Editar-o-md-file-do-post" class="headerlink" title="Editar o md file do post."></a>Editar o md file do post.</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim <span class="built_in">source</span>/_posts/My-very-first-post-ever-aka-Hello-World.md</div></pre></td></tr></table></figure>
+<p>Os arquivo .md dos posts são criados dentro do diretório <code>source/_posts</code>.<br>Lembre-se, o seu post deverá ser criado utilizando <strong>markdown</strong>.</p>
 <h4 id="Subir-o-server-e-testar"><a href="#Subir-o-server-e-testar" class="headerlink" title="Subir o server e testar"></a>Subir o server e testar</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>O comando acima sobe um <a href="http://localhost:4000/" target="_blank" rel="external">server local</a> escutando na porta 4000 onde é possivel visualizar o seu blog.</p>
 <h4 id="Gerar-os-estaticos"><a href="#Gerar-os-estaticos" class="headerlink" title="Gerar os estáticos"></a>Gerar os estáticos</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>E por fim, fazer o deploy para um hosting, no caso o github pages é uma boa pedida<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
-<h3 id="conclusao"><a href="#conclusao" class="headerlink" title="conclusão"></a>conclusão</h3><p>Foi o blog mais rápido que eu subi. E todos os meus posts agora, sobre tech vou criar usando o Hexo.</p>
+<p>Para, de fato, hospedar o blog em algum lugar, só precisamos gerar os arquivos estáticos.<br>O <strong>generate</strong> faz isso por nós.</p>
+<h4 id="Github-pages"><a href="#Github-pages" class="headerlink" title="Github pages"></a>Github pages</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repository:</span> <span class="string">git@github.com:&lt;your_github_name/&lt;your_repo_name&gt;.github.io.git</span></div></pre></td></tr></table></figure>
+<p>O bloco de código acima precisa ser colocado no final do arquivo <code>_config.yml</code> do seu blog.<br>Também crie na sua conta do <strong>gitHub</strong> um repositório no seguinte padrão:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`**your_name_or_whatever**`.github.io</div></pre></td></tr></table></figure></p>
+<p>Este repositório é para onde serão enviados os arquivos estáticos do seu blog, enteriormente gerados pelo <code>hexo generate</code></p>
+<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p>E por fim, faça o deploy para o hosting, que neste caso é o <a href="https://pages.github.com/" target="_blank" rel="external">github pages</a>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
+<h3 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h3><p>Me apaixonei perdidamente pelo Hexo por conta da sua simplicidade!<br>Foi o blog mais rápido (e mais bonito) que eu subi em toda a minha vida.<br>E não pára por aí! Há uma vasta gama de plugins e temas para serem explorados, que eu nem sequer testei ainda.<br>Finalmente! Agora consigo mais escrever e compartilhar, do que ficar escolhendo tema e firulinhas.</p>
+<h3 id="Curtiu"><a href="#Curtiu" class="headerlink" title="Curtiu?"></a>Curtiu?</h3><p>Se gostou, subiu o seu blog no Hexo, ou virou o nariz porque é fã do Ghost, <strong>comenta ai</strong>!!<br><img src="https://res.cloudinary.com/dd4cwj7yt/image/upload/c_scale,w_80/v1494216554/heart_m2tpjw.gif" alt="alt text"></p>
 
                     
                         
@@ -398,27 +369,8 @@
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/05/04/Blogging-in-node-js/">
-                            <h3 class="media-heading">Blogging in node.js</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    May 4, 2017
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yoursite.com/2017/05/04/Hello-world/">
-                            <h3 class="media-heading">Hello world</h3>
+                        <a class="link-unstyled" href="https://adelsjnr.github.io/2017/05/04/Blogging-in-node-js/">
+                            <h3 class="media-heading">Blogging in node.js com Hexo framework</h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
@@ -440,7 +392,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                2 posts found
+                1 post found
             </p>
         </div>
     </div>
