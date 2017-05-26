@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Tech notes</title>
-  <subtitle>My little notes on Tech</subtitle>
+  <title>Blog do Adelson</title>
+  <subtitle>Pequeno espaço para o aprendizado do dia a dia.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adelsjnr.github.io/"/>
